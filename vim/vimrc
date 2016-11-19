@@ -42,16 +42,22 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Wang Sheng Customized
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" add plugins
 execute pathogen#infect()
 syntax on
 filetype plugin indent on
 au VimEnter *  NERDTree
-autocmd VimEnter * nested :TagbarOpen
+au VimEnter * nested :TagbarOpen
+" highlight line width
 if version >= 703
   set colorcolumn=80
 else
   match ErrorMsg '\%>80v.\+'
 endif
+" highlight trailing space
+match ErrorMsg '\s\+$'
+" show line number
 set nu
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
