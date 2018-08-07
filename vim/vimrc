@@ -45,18 +45,22 @@
 
 " add plugins
 execute pathogen#infect()
+Helptags
 syntax on
 filetype plugin indent on
-au VimEnter *  NERDTree
+au VimEnter * NERDTree
 au VimEnter * nested :TagbarOpen
+
 " highlight line width
 if version >= 703
   set colorcolumn=80
 else
   match ErrorMsg '\%>80v.\+'
 endif
+
 " show line number
 set nu
+
 " auto remove trailing spaces
 function! TrimWhiteSpace()
     %s/\s\+$//e
