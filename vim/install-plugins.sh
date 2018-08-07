@@ -3,7 +3,12 @@ mkdir -p ~/.vim/autoload ~/.vim/bundle && \
   curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 
 # install NERDTree
-git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree
+cd ~/.vim/bundle && git clone https://github.com/scrooloose/nerdtree.git
 
-#install TagBar
-git clone git://github.com/majutsushi/tagbar ~/.vim/bundle/tagbar
+# install TagBar
+cd ~/.vim/bundle && git clone git://github.com/majutsushi/tagbar
+
+# install YCM
+cd ~/.vim/bundle && git clone https://github.com/Valloric/YouCompleteMe.git
+cd YouCompleteMe && git submodule update --init --recursive
+./install.sh --clang-completer
