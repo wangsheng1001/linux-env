@@ -2,6 +2,11 @@
 mkdir -p ~/.vim/autoload ~/.vim/bundle && \
   curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 
+## copy .vimrc
+cp vimrc ~/.vimrc
+## copy ycm_extra_conf.py for YCM
+cp ycm_extra_conf.py ~/.vim
+
 # install NERDTree
 cd ~/.vim/bundle && git clone https://github.com/scrooloose/nerdtree.git
 
