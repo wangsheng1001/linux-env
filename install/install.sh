@@ -1,5 +1,10 @@
-sudo apt-get install -y vim astyle
-sudo apt-get install -y default-jdk
-sudo apt-get install -y exuberant-ctags
-sudo apt-get install -y curl
-sudo apt-get install -y tmux
+# /usr/bin/env bash
+
+COMMAND=apt-get
+
+sudo $COMMAND install -y cmake
+sudo $COMMAND install -y vim astyle
+sudo $COMMAND install -y default-jdk
+sudo $COMMAND install -y exuberant-ctags
+sudo $COMMAND install -y curl
+sudo $COMMAND install -y tmux
