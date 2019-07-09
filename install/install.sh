@@ -1,6 +1,7 @@
 # /usr/bin/env bash
 
 COMMAND=apt-get
+# COMMAND=yum
 
 sudo $COMMAND install -y cmake
 sudo $COMMAND install -y vim astyle
