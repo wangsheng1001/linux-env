@@ -1,5 +1,11 @@
+##########################################################
+### Customized by WANG Sheng (wangsheng1001@gmail.com) ###
+##########################################################
 
-# Customized by WANG Sheng (wangsheng1001@gmail.com)
+### enable new compilers ###
+# source scl_source enable devtoolset-7 llvm-toolset-7
+
+### add local lib path ###
 
 append_to_path() {
   # 1: target-variable
