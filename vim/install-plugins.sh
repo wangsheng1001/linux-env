@@ -18,6 +18,9 @@ cd ~/.vim/bundle && git clone git://github.com/majutsushi/tagbar
 # install CtrlP
 cd ~/.vim/bundle && git clone https://github.com/ctrlpvim/ctrlp.vim.git
 
+# install clang-format
+cd ~/.vim/bundle && git clone https://github.com/rhysd/vim-clang-format.git
+
 # install YCM
 cd ~/.vim/bundle && git clone https://github.com/Valloric/YouCompleteMe.git
 cd YouCompleteMe && git submodule update --init --recursive
