@@ -33,6 +33,7 @@ append_to_path CPLUS_INCLUDE_PATH $INSTALL_PATH/include
 append_to_path CPATH $INSTALL_PATH/include
 append_to_path CMAKE_INCLUDE_PATH $INSTALL_PATH/include
 append_to_path CMAKE_LIBRARY_PATH $INSTALL_PATH/lib
+append_to_path PKG_CONFIG_PATH $INSTALL_PATH/lib/pkgconfig
 
 # export PATH=$INSTALL_PATH/bin:$PATH
 # export LD_LIBRARY_PATH=$INSTALL_PATH/lib:$LD_LIBRARY_PATH
