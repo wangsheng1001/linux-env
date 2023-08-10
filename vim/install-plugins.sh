@@ -13,7 +13,7 @@ cp ycm_extra_conf.py ~/.vim
 cd ~/.vim/bundle && git clone https://github.com/scrooloose/nerdtree.git
 
 # install TagBar
-cd ~/.vim/bundle && git clone git://github.com/majutsushi/tagbar
+cd ~/.vim/bundle && git clone https://github.com/majutsushi/tagbar
 
 # install CtrlP
 cd ~/.vim/bundle && git clone https://github.com/ctrlpvim/ctrlp.vim.git
